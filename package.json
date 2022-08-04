@@ -5,10 +5,10 @@
   "main": "src/index.js",
   "homepage": "https://johnrobertmcc.github.io/jmc_cooley",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "webpack .",
     "start": "webpack serve --config webpack.config.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -28,9 +28,9 @@
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
+    "node-html-parser": "^5.3.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1"
+    "react-dom": "^18.2.0"
   },
   "browserslist": {
     "production": [
