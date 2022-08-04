@@ -1,10 +1,11 @@
 {
   "name": "cooley_group",
   "version": "1.0.0",
-  "description": "",
+  "description": "After 20 years of service, JMc Promotions has been transitioned to the Cooley Group. Contact Chad Clark for your promotional needs.",
   "main": "src/index.js",
-  "homepage": "https://johnrobertmcc.github.io",
+  "homepage": "https://johnrobertmcc.github.io/jmc_cooley",
   "scripts": {
+    "build": "rm -rf dist && webpack --mode development",
     "start": "webpack serve --config webpack.config.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -29,5 +30,17 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
