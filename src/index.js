@@ -53,11 +53,13 @@ function Layout() {
         >
           {btnText}
         </a>
-        <a
-          href="https://www.cooleybrand.com/about-cooley-group/"
-          className={styles.imgWrapper}
-          aria-label={brandName}
-        />
+        <div className={styles.imgWrapper}>
+          <a
+            href="https://www.cooleybrand.com/about-cooley-group/"
+            className={styles.logo}
+            aria-label={brandName}
+          />
+        </div>
       </dialog>
     </main>
   );
